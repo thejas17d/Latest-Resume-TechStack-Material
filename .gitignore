@@ -1,0 +1,12 @@
+# Office temp/lock files
+~$*
+*.tmp
+# Secrets — never commit
+.env
+*.pem
+token*.json
+client_secret*.json
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
