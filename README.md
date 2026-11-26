@@ -9,8 +9,8 @@ My living repo for two things:
 
 | What | File | Updated |
 |---|---|---|
-| Resume (Word) | [`Resume/Thejas M - Resume (2026-11-25).docx`](Resume/) | 2026-11-25 |
-| Resume (PDF) | [`Resume/Thejas M - Resume (2026-11-25).pdf`](Resume/) | 2026-11-25 |
+| Resume (Word) | [`Resume/Thejas M - Resume (2026-11-26).docx`](Resume/) | 2026-11-26 |
+| Resume (PDF) | [`Resume/Thejas M - Resume (2026-11-26).pdf`](Resume/) | 2026-11-26 |
 | Study guide | [`Study Material/Tech Career Playbook (2026-11-25).html`](Study%20Material/) | 2026-11-25 |
 
 > Keep this table pointing at the newest files every time you update.
