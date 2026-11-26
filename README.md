@@ -12,6 +12,7 @@ My living repo for two things:
 | Resume (Word) | [`Resume/Thejas M - Resume (2026-11-26).docx`](Resume/) | 2026-11-26 |
 | Resume (PDF) | [`Resume/Thejas M - Resume (2026-11-26).pdf`](Resume/) | 2026-11-26 |
 | Study guide | [`Study Material/Tech Career Playbook (2026-11-25).html`](Study%20Material/) | 2026-11-25 |
+| Applications log | [`Applications/applications on 2026-11-26.html`](Applications/) | 2026-11-26 |
 
 > Keep this table pointing at the newest files every time you update.
 
@@ -30,6 +31,10 @@ Study Material/<Topic name> (YYYY-MM-DD).html        ← for any new study mater
 - Move superseded versions into `Resume/archive/` or `Study Material/archive/` so the top level only shows the latest.
 - Update the **Latest versions** table above in the same commit.
 - Commit message format: `resume: <what changed> (YYYY-MM-DD)` or `material: <what changed> (YYYY-MM-DD)`.
+
+## Applications log
+
+One HTML page per day of job applications, named `applications on YYYY-MM-DD.html` (made by LevelUpCorp `scripts/daily_summary.py`). Download and open in a browser.
 
 ## How to use the study guide
 
