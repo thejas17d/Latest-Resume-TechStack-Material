@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Learning Material (2026-11-26)</title>
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--ink:#16181b;--muted:#5f6670;--line:#e3e1da;--accent:#b38900;--good:#1f7a4d;--mid:#9a6b00;--long:#a3483d;--chip:#f0eee9}
+@media (prefers-color-scheme:dark){:root{--bg:#16181b;--card:#1e2124;--ink:#f0eee9;--muted:#a9aeb4;--line:#30343a;--accent:#ffd400;--good:#5fc58f;--mid:#f0c14b;--long:#e08a7f;--chip:#292d31}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,Segoe UI,Roboto,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:28px 16px 70px}h1{margin:0 0 4px;font-size:28px}h2{margin:38px 0 10px;font-size:21px}h3{margin:0 0 6px;font-size:17px}
+.muted{color:var(--muted)}a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}nav a{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px;text-decoration:none;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}.wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.fit{font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--chip);white-space:nowrap}
+.fit.good{color:var(--good)}.fit.mid{color:var(--mid)}.fit.long{color:var(--long)}
+details.job{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:10px 0}
+details.job summary{cursor:pointer;padding:12px 16px;list-style:none;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+details.job summary::-webkit-details-marker{display:none}details.job .in{padding:0 18px 14px;border-top:1px solid var(--line)}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:4px 24px}
+.lbl{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:12px 0 2px}
+ul{padding-left:20px;margin:4px 0}li{margin:3px 0}
+.plan label{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}.plan input{margin-top:5px;accent-color:var(--accent)}
+.prog{height:8px;background:var(--chip);border-radius:999px;overflow:hidden;margin:8px 0}.prog i{display:block;height:100%;width:0;background:var(--accent)}
+</style></head><body><main>
+<h1>Learning Material (2026-11-26)</h1>
+<p class="muted">What to learn and how to prepare for the 16 roles applied to on 26 Nov 2026, built from each job's actual description. Fit labels are honest: most roles were stretches, so the plan focuses on skills that show up again and again.</p>
+<nav><a href="#fit">Fit overview</a><a href="#skills">Top skills to learn</a><a href="#jobs">Per-job prep</a><a href="#plan">14-day plan</a><a href="#stories">Interview stories</a><a href="#links">Resources</a></nav>
+
+<h2 id="fit">1. Where you stand</h2>
+<div class="wrap"><table>
+<tr><th>Company · role</th><th>Fit</th><th>Main gap</th></tr>
+<tr><td><b>Celonis</b> · Associate (AI) Solution Consultant</td><td><span class="fit good">Good</span></td><td>Graduate "Orbit" program; learn process mining + demo skills</td></tr>
+<tr><td><b>Bosch</b> · Software Automation Expert</td><td><span class="fit good">Good</span></td><td>Asks 1-2 yrs; learn an RPA tool (UiPath / Power Automate) and OutSystems basics</td></tr>
+<tr><td><b>GitLab</b> · Applied AI Engineer, Enterprise AI</td><td><span class="fit good">Good</span></td><td>Measuring ROI/flow metrics; GitLab Duo; async writing</td></tr>
+<tr><td><b>Sarvam AI</b> · Deployment Strategist I</td><td><span class="fit mid">Medium</span></td><td>Asks 2-4 yrs; client consulting + BFSI process knowledge</td></tr>
+<tr><td><b>Glean</b> · Solutions Engineer</td><td><span class="fit mid">Medium</span></td><td>Pre-sales demos/PoVs; enterprise search, SSO and connectors</td></tr>
+<tr><td><b>Celonis</b> · Analytics Engineer</td><td><span class="fit mid">Medium</span></td><td>Asks 2-4 yrs; advanced SQL, statistics, BI, tested code</td></tr>
+<tr><td><b>Stripe</b> · Monetization Operations Analyst</td><td><span class="fit mid">Medium</span></td><td>Billing/contract operations; finance process detail</td></tr>
+<tr><td><b>Stripe</b> · Strategy &amp; Analytics Business Partner</td><td><span class="fit mid">Medium</span></td><td>Advanced SQL; reconciling finance datasets</td></tr>
+<tr><td><b>Bosch</b> · Generative AI &amp; Agent Systems Engineer</td><td><span class="fit long">Stretch</span></td><td>Asks 5+ yrs; skills match well (agents, RAG, MCP) but need LangGraph, evals, Azure AI</td></tr>
+<tr><td><b>Snowflake</b> · Forward Deployed Engineer</td><td><span class="fit long">Stretch</span></td><td>Asks ~3 yrs; evals/golden datasets, Snowpark + Cortex</td></tr>
+<tr><td><b>NielsenIQ</b> · AI Engineer</td><td><span class="fit long">Stretch</span></td><td>Senior role; LangGraph/Semantic Kernel, governance, mentoring</td></tr>
+<tr><td><b>Coinbase</b> · Machine Learning Engineer (IC4)</td><td><span class="fit long">Stretch</span></td><td>2+ yrs shipping ML; multi-agent orchestration, LangGraph/LangSmith, design docs</td></tr>
+<tr><td><b>HighRadius</b> · Agent Product Builder</td><td><span class="fit long">Stretch</span></td><td>Wants top-tier IIT record, Rust/functional, distributed systems, optimisation (MILP)</td></tr>
+<tr><td><b>Bosch</b> · AI &amp; Automation Specialist (Logistics)</td><td><span class="fit long">Stretch</span></td><td>Asks 2-5 yrs in logistics/supply chain</td></tr>
+<tr><td><b>HighRadius</b> · Forward Deployed Engineer (Expansion)</td><td><span class="fit long">Long shot</span></td><td>3+ yrs quota-bearing technical sales; CFO/Order-to-Cash domain; MBA preferred</td></tr>
+<tr><td><b>ServiceNow</b> · Advisory Specialist Solutions Consultant</td><td><span class="fit long">Long shot</span></td><td>5+ yrs pre-sales; ServiceNow platform, HR Service Delivery</td></tr>
+</table></div>
+
+<h2 id="skills">2. Top skills to learn (ranked by how many of the 16 jobs ask for them)</h2>
+<div class="card"><ol>
+<li><b>Agent frameworks, especially LangGraph</b> <span class="muted">(Bosch GenAI, NIQ, Coinbase, Snowflake, HighRadius, GitLab)</span>. State graphs, tool calling, multi-agent handoff, memory (short and long term), human-in-the-loop. You already built routing and fallback by hand; LangGraph is the industry way to express it.</li>
+<li><b>Evals and observability</b> <span class="muted">(Snowflake, Bosch, NIQ, Coinbase, GitLab)</span>. Golden datasets, LLM-as-judge, regression tests for prompts, tracing with LangSmith or Langfuse, quality metrics (accuracy, faithfulness, safety). Snowflake's description calls this "first-class".</li>
+<li><b>Advanced SQL + statistics + a BI tool</b> <span class="muted">(Celonis AE, Stripe x2, Celonis Associate, Snowflake)</span>. Window functions, CTEs, reconciliation queries, hypothesis tests, simple forecasting, one of Power BI / Tableau / Looker.</li>
+<li><b>Solutions / pre-sales skills</b> <span class="muted">(Glean, ServiceNow, Celonis Associate, Sarvam, HighRadius FDE, Snowflake FDE)</span>. Discovery questions, story-driven demos, proofs of value, ROI/business cases, objection handling.</li>
+<li><b>Advanced RAG</b> <span class="muted">(Bosch GenAI, NIQ, Glean)</span>. Hybrid search (keyword + vectors), re-ranking, vector databases (FAISS, Chroma, Pinecone), Graph RAG, permission-aware retrieval.</li>
+<li><b>Shipping AI services</b> <span class="muted">(Bosch, Coinbase, NIQ)</span>. FastAPI, Docker, CI/CD (you have this from Conzura), one cloud AI platform: Azure OpenAI / AI Foundry is the best pick for Bosch and Indian enterprises.</li>
+<li><b>Protocols: MCP and A2A</b> <span class="muted">(Bosch GenAI, NIQ)</span>. Build one MCP server for a tool you own.</li>
+<li><b>Domain primers</b>: Order-to-Cash and Accounts Receivable (HighRadius), process mining and PQL (Celonis), SaaS billing (Stripe), warehousing/transport (Bosch logistics), HR service delivery (ServiceNow), BFSI customer journeys (Sarvam).</li>
+<li><b>DSA + system design basics</b> <span class="muted">(HighRadius, Coinbase interviews)</span>. Dynamic programming (knapsack), graphs; "design an LLM support bot with human handoff".</li>
+</ol></div>
+
+<h2 id="jobs">3. Per-job prep</h2>
+<p class="muted">Click a role. "Likely questions" are what interviewers for that role typically ask, adapted to the description.</p>
+
+<details class="job"><summary><span class="fit good">Good</span><b>Celonis</b> · Associate (AI) Solution Consultant (Bengaluru)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>12-month graduate "Orbit" program in Value Engineering</li><li>Prototype AI solutions on the Celonis Process Intelligence platform (SQL, PQL, Python)</li><li>Demos to executives, discovery, objection handling, value selling</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>Python + SQL, API automation, AI agents</li><li>Turning client processes into automated tools (HiveMinds)</li><li>Clear writing for non-technical teams</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>Process mining basics: event logs, case IDs, variants, throughput time</li><li>Purchase-to-Pay and Order-to-Cash processes</li><li>Celonis Academy free courses; PQL basics</li><li>A 5-minute "problem → insight → value" demo story</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>What is process mining and why does AI need process context?</li><li>Walk me through a process you automated: what was the business value?</li><li>A CFO says "we already have dashboards". How do you respond?</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit good">Good</span><b>Bosch</b> · Software Automation Expert (Bengaluru)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>1-2 yrs web app + RPA development</li><li>Administer RPA bots, maintain OutSystems low-code apps</li><li>AI Studio / GenAI solutions, hyperautomation, end-user training, documentation</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>Selenium + Playwright browser automation (RPA-style)</li><li>GBP bulk automation with dry-run safety, HiveEasy tool + docs</li><li>GenAI agents</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>UiPath Academy "RPA Developer Foundation" (free) or Microsoft Power Automate</li><li>OutSystems free personal environment + "Becoming a Reactive Web Developer"</li><li>RPA concepts: attended vs unattended bots, orchestrator, queues, exception handling</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>How do you decide a process is a good RPA candidate?</li><li>A bot fails at 2 AM on a changed web page. What's your design for resilience?</li><li>How would you train non-technical users to adopt a new bot?</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit good">Good</span><b>GitLab</b> · Applied AI Engineer, Enterprise AI (Bengaluru, remote)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>Embed AI into GitLab's own Sales, Marketing, Support workflows</li><li>Diagnose the real constraint first; flag when AI isn't the answer</li><li>Ship prototypes in days; track flow, adoption and ROI metrics</li><li>Use GitLab Duo Agent Platform where it fits</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>Exactly this pattern at HiveMinds: internal tools for business teams</li><li>Multi-LLM agent, LevelUpCorp, API integrations</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>GitLab basics: issues, merge requests, CI pipelines; skim the GitLab Handbook (values, async work)</li><li>GitLab Duo features and the Duo Agent Platform</li><li>Before/after metrics: lead time, throughput, adoption, cost per task</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>Tell me about a time AI was NOT the right solution.</li><li>How did you measure the impact of your 20-day → 2-hour pipeline?</li><li>Design an AI assistant that drafts replies for support agents. How do you evaluate it?</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit mid">Medium</span><b>Sarvam AI</b> · Deployment Strategist I</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>2-4 yrs consulting/product/engineering (DS-1 is the entry level)</li><li>Understand client workflows (banks, government), build Python + LLM prototypes</li><li>Track adoption; Indian language skills are a plus</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>Prototype-to-production tools, LLM APIs, a multilingual RAG assistant</li><li>Hindi/Kannada (say so)</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>Sarvam's products and APIs (speech, translation, Indic LLMs)</li><li>BFSI journeys: KYC, loan servicing, collections, customer support</li><li>Problem structuring (issue trees, MECE): practise 2-3 case questions</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>A bank wants to cut call-centre load. Where would you apply an AI agent first, and why?</li><li>How would you measure if a deployed voice agent is working?</li><li>Build a quick plan for a Kannada-language support bot.</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit mid">Medium</span><b>Glean</b> · Solutions Engineer (Bengaluru, EMEA shift)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>Interactive demos, explain Glean's architecture, run pilots/Proofs of Value</li><li>Train customers; liaise with product and engineering</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>RAG + agents, OAuth/API integrations (Google APIs)</li><li>Explaining tools to non-technical teams</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>Enterprise search: connectors (Slack, Drive, Salesforce, Jira), permission-aware retrieval, knowledge graphs</li><li>SSO (SAML/OIDC), SCIM, data security questions customers ask</li><li>Demo craft: tell-show-tell, persona-based stories</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>Explain RAG to a CIO in two minutes.</li><li>How does Glean make sure a user never sees a document they don't have access to?</li><li>Run a 5-minute demo of any tool you built.</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit mid">Medium</span><b>Celonis</b> · Analytics Engineer (Bengaluru)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>2-4 yrs analytics engineering/BI</li><li>Strong SQL on large datasets, Python for stats/prediction</li><li>Tested, version-controlled code; dashboards; AI in analytics workflows</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>GSC/GA4 analysis, traffic-drop diagnosis, HiveEasy reporting</li><li>Git, CI, Python automation</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>Advanced SQL: window functions, CTEs, deduping, cohort queries (LeetCode SQL 50)</li><li>dbt basics: models, tests, docs</li><li>Statistics: hypothesis tests, confidence intervals, regression, simple forecasting</li><li>Power BI or Tableau: one polished dashboard</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>Write SQL for 7-day rolling active users / month-over-month change.</li><li>A KPI dropped 20% overnight. Walk me through your investigation.</li><li>How do you test a data pipeline?</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit mid">Medium</span><b>Stripe</b> · Monetization Operations Analyst + Strategy &amp; Analytics Business Partner (Bengaluru)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li><b>Monetization Ops:</b> onboard custom contracts into billing, scalable auditable processes, detail with legal contracts</li><li><b>Strategy &amp; Analytics:</b> advanced SQL, reconcile datasets across finance systems, dashboards, AI for efficiency</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>Data analysis, automation that replaced paid tools, attention to detail (dry-run first)</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>SaaS billing: usage-based pricing, invoicing, credits, collections, revenue recognition basics</li><li>Finance data: general ledger, revenue vs bookings, reconciliation</li><li>Stripe's product docs: Billing, Invoicing, Revenue Recognition</li><li>Advanced SQL (same as Celonis)</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>Two systems disagree on revenue for March. How do you reconcile them?</li><li>Design an onboarding process for a custom contract that stays auditable.</li><li>SQL: find customers billed twice in the same period.</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit long">Stretch</span><b>Bosch</b> · Generative AI &amp; Agent Systems Engineer (Bengaluru)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>5+ yrs (stretch), Python, LangGraph/CrewAI/AutoGen/Semantic Kernel/LlamaIndex</li><li>RAG variants (Agentic, Graph, hybrid), vector DBs, agent memory, tool calling</li><li>MCP, A2A, FastAPI, Docker, CI/CD, Azure AI Foundry/Bedrock/Vertex, LLMOps, evals, guardrails</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>Model routing + fallback, tool-driven agent (LevelUpCorp), RAG assistant, MCP, Docker, GitHub Actions</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>LangGraph (state, nodes, checkpoints/memory, multi-agent)</li><li>Hybrid search + re-ranking; one Graph RAG demo</li><li>Evals + tracing (Langfuse / LangSmith)</li><li>Azure AI Foundry quickstart; FastAPI + Docker deploy</li><li>A2A protocol basics</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>Design a multi-agent system that answers engineering questions from 10,000 internal documents.</li><li>How do you give an agent long-term memory without blowing the context window?</li><li>How do you stop an agent from taking a wrong action in production?</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit long">Stretch</span><b>Snowflake</b> · Forward Deployed Engineer, Frontier Engineering (Bengaluru)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>Build enterprise AI agents with Snowpark, Cortex and native LLMs</li><li>Define quality metrics, golden datasets, eval loops; guardrails, observability</li><li>Python + SQL velocity; 25% travel to customers</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>Agents, pipelines, SQL, guardrail thinking (fixed rules overriding the model)</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>Snowflake free trial + Quickstarts: Cortex Analyst, Cortex Search, Snowpark Python</li><li>Eval loops: build a golden set, score, fix, re-score ("hill-climbing")</li><li>Talking to customer data teams: requirements → metrics</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>A customer says the agent "feels wrong 20% of the time". How do you turn that into a measurable eval?</li><li>Text-to-SQL over a messy warehouse: how do you make it reliable?</li><li>Tell me about a time you caught a model mistake before users did. (Use the visa-sponsorship catch from LevelUpCorp.)</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit long">Stretch</span><b>NielsenIQ</b> · AI Engineer</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>Senior engineer: LLM apps, RAG, agents (MCP, LangGraph, Semantic Kernel, CrewAI)</li><li>Reusable accelerators, guardrails, evals, governance, mentoring</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>Agents, RAG, MCP; retail data pipelines (5,000+ stores)</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>LangGraph + one alternative (Semantic Kernel or CrewAI) so you can compare</li><li>Responsible AI: data privacy, PII handling, model risk basics</li><li>Building a reusable template repo (cookiecutter-style) for AI apps</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>How would you build a reusable RAG accelerator other teams can adopt?</li><li>What guardrails do you put on an agent that queries internal data?</li><li>LangGraph vs CrewAI: when would you use each?</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit long">Stretch</span><b>Coinbase</b> · Machine Learning Engineer (Remote, India)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>IC4, 2+ yrs shipping production ML</li><li>Orchestration layer: state transitions, context sharing, intent routing across vendor + internal LLM systems, human handoff</li><li>LangGraph/LangSmith, Vertex/Bedrock; tested Python; design docs</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>Intent-style routing between LLM providers, fallback logic, a self-trained classifier</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>Conversation state machines and handoff patterns (bot → agent → bot)</li><li>Intent classification + confidence thresholds</li><li>pytest, typed Python, writing a 2-page design doc</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>Design the routing layer between a vendor chatbot and internal agents. What state do you keep?</li><li>How do you know when to hand a conversation to a human?</li><li>Coding: implement a simple LRU cache / rate limiter in Python.</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit long">Stretch</span><b>HighRadius</b> · Agent Product Builder</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>Design, code, deploy autonomous agents for CFO-office workflows</li><li>Forecasting, anomaly detection, reconciliation; optimisation (knapsack, MILP) on huge data</li><li>Top-tier IIT record preferred; Rust/functional + Python/Java; distributed systems</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>End-to-end agents, data pipelines, dashboards</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>DSA: dynamic programming (0/1 knapsack), greedy, graphs</li><li>MILP basics with Google OR-Tools or PuLP</li><li>Anomaly detection (isolation forest, z-scores) + time-series forecasting</li><li>Order-to-Cash / Accounts Receivable basics</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>Solve 0/1 knapsack; then: how would it scale to millions of invoices?</li><li>Design an agent that matches incoming payments to open invoices.</li><li>How do you prove a 90%+ automation rate to a CFO?</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit long">Stretch</span><b>Bosch</b> · AI &amp; Automation Specialist in Logistics (Bengaluru)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>2-5 yrs AI/automation in logistics and supply chain</li><li>Warehousing, transportation, foreign trade; forecasting, optimisation, document AI; business cases + KPIs</li></ul></div>
+<div><p class="lbl">You have</p><ul><li>Process automation with measured savings; Python + SQL on operational data</li></ul></div>
+<div><p class="lbl">Learn</p><ul><li>Logistics basics: WMS/TMS, inbound/outbound, picking, freight, Incoterms</li><li>Demand/volume forecasting; vehicle-routing (OR-Tools VRP)</li><li>Document AI for invoices and customs papers</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>Pick one warehouse process and design an AI use case with a business case.</li><li>How would you forecast weekly shipment volumes?</li><li>How do you move a PoC into stable production?</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit long">Long shot</span><b>HighRadius</b> · Forward Deployed Engineer (Expansion)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>3+ yrs quota-bearing technical sales or consulting; CFO office, ERP, Order-to-Cash</li><li>ROI models, demos with live client data; MBA preferred</li></ul></div>
+<div><p class="lbl">Learn (if it moves)</p><ul><li>Order-to-Cash end to end; Accounts Receivable metrics (DSO, cash application)</li><li>Building an ROI model in a spreadsheet</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>Explain Order-to-Cash and where AI saves the most money.</li><li>Build a quick ROI case for automating cash application.</li></ul></div>
+</div></div></details>
+
+<details class="job"><summary><span class="fit long">Long shot</span><b>ServiceNow</b> · Advisory Specialist Solutions Consultant (Bengaluru)</summary><div class="in"><div class="g">
+<div><p class="lbl">They want</p><ul><li>5+ yrs pre-sales; EmployeeWorks + HR Service Delivery (HRSD)</li><li>Demos, prototypes with Agent Studio, REST APIs and low-code; RFPs; business cases</li></ul></div>
+<div><p class="lbl">Learn (if it moves)</p><ul><li>Free ServiceNow Personal Developer Instance (PDI): build one small HR case flow</li><li>Now Assist and AI Agent Studio overview</li><li>HR service delivery basics: onboarding, cases, knowledge, employee journeys</li></ul></div>
+<div><p class="lbl">Likely questions</p><ul><li>Demo how an employee gets an HR answer through one AI front door.</li><li>A customer asks how ServiceNow integrates with their HRMS. Explain REST integration.</li></ul></div>
+</div></div></details>
+
+<h2 id="plan">4. 14-day plan (about 2 hours a day)</h2>
+<div class="card plan">
+<div class="prog"><i id="bar"></i></div><p class="muted" id="ptxt">0 of 14 done</p>
+<label><input type="checkbox" data-k="d1"><span><b>Days 1-3 · LangGraph.</b> Do LangChain Academy's free "Intro to LangGraph". Rebuild your OpenClaw router as a LangGraph graph with fallback, memory and a human-approval step. Push it to GitHub.</span></label>
+<label><input type="checkbox" data-k="d4"><span><b>Days 4-5 · Evals.</b> Make a golden set of 30 form questions from LevelUpCorp with correct answers; score Groq vs another model with an LLM-as-judge; add tracing (Langfuse). Write a short README with results.</span></label>
+<label><input type="checkbox" data-k="d6"><span><b>Days 6-7 · Advanced RAG.</b> Upgrade your AI Office Assistant: hybrid search (BM25 + embeddings) + re-ranker in Chroma/FAISS; compare answer quality before/after.</span></label>
+<label><input type="checkbox" data-k="d8"><span><b>Days 8-9 · SQL + stats.</b> LeetCode "SQL 50" (window functions, CTEs); refresh hypothesis tests and regression.</span></label>
+<label><input type="checkbox" data-k="d10"><span><b>Day 10 · Ship it.</b> Wrap the LangGraph agent in FastAPI + Docker; deploy on Azure (free credits) with a GitHub Actions pipeline.</span></label>
+<label><input type="checkbox" data-k="d11"><span><b>Day 11 · MCP.</b> Build an MCP server for one of your tools (e.g. GSC/GA4 data from HiveEasy) and use it from Claude.</span></label>
+<label><input type="checkbox" data-k="d12"><span><b>Day 12 · Solutions track.</b> Celonis Academy intro course + ServiceNow PDI signup; record a 5-minute demo of LevelUpCorp.</span></label>
+<label><input type="checkbox" data-k="d13"><span><b>Day 13 · Domain primers.</b> One hour each: Order-to-Cash, SaaS billing, process mining, BFSI customer journeys.</span></label>
+<label><input type="checkbox" data-k="d14"><span><b>Day 14 · Mock interviews.</b> Rehearse the 6 stories below out loud; do one system design: "LLM support bot with human handoff".</span></label>
+</div>
+
+<h2 id="stories">5. Interview story bank (STAR: situation, task, action, result)</h2>
+<div class="card"><ul>
+<li><b>Impact story:</b> Places rank tracker. A scraper took 20+ days → Python API pipeline, 5,000+ stores in under 2 hours.</li>
+<li><b>Saved money:</b> HiveEasy replaced a paid Search Analytics add-on at zero cost, with features the paid one lacked.</li>
+<li><b>Quality / judgment:</b> Semantics benchmarked against hand-picked keywords: 92% decided automatically, 99% kept.</li>
+<li><b>Caught an AI mistake:</b> In LevelUpCorp dry runs the model said "Yes" to visa sponsorship; you added deterministic rules so it can never happen in a real application.</li>
+<li><b>Reliability:</b> Multi-LLM router with automatic fallback when a provider fails or runs out of credits.</li>
+<li><b>Safety-first automation:</b> GBP bulk creation with dry-run by default; HAL sensor fault detector replacing manual inspection.</li>
+</ul></div>
+
+<h2 id="links">6. Free resources</h2>
+<div class="card"><ul>
+<li>LangGraph course: <a href="https://academy.langchain.com/courses/intro-to-langgraph">LangChain Academy · Intro to LangGraph</a></li>
+<li>Evals: <a href="https://hamel.dev/blog/posts/evals/">Hamel Husain · Your AI product needs evals</a> · tracing: <a href="https://langfuse.com/docs">Langfuse docs</a></li>
+<li>MCP: <a href="https://modelcontextprotocol.io/">modelcontextprotocol.io</a></li>
+<li>Short AI courses: <a href="https://www.deeplearning.ai/short-courses/">DeepLearning.AI short courses</a> (agents, RAG, evaluation, MCP)</li>
+<li>FastAPI: <a href="https://fastapi.tiangolo.com/tutorial/">FastAPI tutorial</a> · Azure AI: <a href="https://learn.microsoft.com/en-us/azure/ai-foundry/">Azure AI Foundry docs</a></li>
+<li>SQL: <a href="https://leetcode.com/studyplan/top-sql-50/">LeetCode SQL 50</a> · <a href="https://mode.com/sql-tutorial/">Mode SQL tutorial</a> · Stats: <a href="https://www.khanacademy.org/math/statistics-probability">Khan Academy statistics</a></li>
+<li>Snowflake: <a href="https://quickstarts.snowflake.com/">Snowflake Quickstarts</a> (Cortex Analyst, Cortex Search, Snowpark)</li>
+<li>Celonis: <a href="https://academy.celonis.com/">Celonis Academy</a> · ServiceNow: <a href="https://developer.servicenow.com/">ServiceNow Developer Program (free instance)</a></li>
+<li>RPA: <a href="https://academy.uipath.com/">UiPath Academy</a> · Low-code: <a href="https://learn.outsystems.com/">OutSystems training</a></li>
+<li>Optimisation: <a href="https://developers.google.com/optimization">Google OR-Tools</a> · Sarvam: <a href="https://docs.sarvam.ai/">Sarvam AI docs</a></li>
+<li>Your own guide: <i>Tech Career Playbook (2026-11-25).html</i> in this folder (chapters: AI/LLM stack, System Design, AI System Design, DSA)</li>
+</ul></div>
+<p class="muted">Made 26 Nov 2026 from the job descriptions of that day's applications.</p>
+</main>
+<script>
+(function(){
+  var boxes = document.querySelectorAll('.plan input[type=checkbox]');
+  function save(){ var s={}; boxes.forEach(function(b){ s[b.dataset.k]=b.checked; }); try{ localStorage.setItem('lm-2026-11-26', JSON.stringify(s)); }catch(e){} paint(); }
+  function paint(){ var n=0; boxes.forEach(function(b){ if(b.checked) n++; }); var pct=Math.round(n/boxes.length*100);
+    document.getElementById('bar').style.width=pct+'%'; document.getElementById('ptxt').textContent=n+' of '+boxes.length+' steps done'; }
+  try{ var s=JSON.parse(localStorage.getItem('lm-2026-11-26')||'{}'); boxes.forEach(function(b){ b.checked=!!s[b.dataset.k]; }); }catch(e){}
+  boxes.forEach(function(b){ b.addEventListener('change', save); }); paint();
+})();
+</script>
+</body></html>

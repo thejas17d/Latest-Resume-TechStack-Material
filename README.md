@@ -13,6 +13,8 @@ My living repo for two things:
 | Resume (PDF) | [`Resume/Thejas M - Resume (2026-11-26).pdf`](Resume/) | 2026-11-26 |
 | Study guide | [`Study Material/Tech Career Playbook (2026-11-25).html`](Study%20Material/) | 2026-11-25 |
 | Applications log | [`Applications/applications on 2026-11-26.html`](Applications/) | 2026-11-26 |
+| Learning material | [`Study Material/Learning Material (2026-11-26).html`](Study%20Material/) | 2026-11-26 |
+| Overall jobs file | [`Applications/Overall Jobs (2026-11-26).html`](Applications/) | 2026-11-26 |
 
 > Keep this table pointing at the newest files every time you update.
 
@@ -34,7 +36,11 @@ Study Material/<Topic name> (YYYY-MM-DD).html        ← for any new study mater
 
 ## Applications log
 
-One HTML page per day of job applications, named `applications on YYYY-MM-DD.html` (made by LevelUpCorp `scripts/daily_summary.py`). Download and open in a browser.
+- `applications on YYYY-MM-DD.html`: the day's submitted applications (LevelUpCorp `scripts/daily_summary.py`).
+- `Overall Jobs (YYYY-MM-DD).html`: every scored job with details, search and filters (LevelUpCorp `scripts/jobs_catalog.py`).
+- `Study Material/Learning Material (YYYY-MM-DD).html`: what to learn and how to prepare for the roles applied to.
+
+Download and open in a browser.
 
 ## How to use the study guide
 
